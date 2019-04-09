@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+body{
+	background-color:#c0c0c0;
+	
+}
+#001{
+	background-color: white;
+	width: 70%;
+	padding:10px;
+	margin:auto;
+	
+}
+h3{
+	text-align:center;
+}
+
+.modal {
+    background-color: #ffffff;
+	width: 70%;
+	padding:10px;
+	margin:auto;
+} 
+.tab1 {
+  border-collapse: collapse;
+  border: 1px solid black;
+ 
+}
+.tab1 {
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    
+  }
+  tr,td {text-align:left;}
+  
+  th,td{
+padding:10px;
+}

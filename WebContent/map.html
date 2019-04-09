@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;  
+        width: 100%;  
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+function initMap() {
+	
+	var directionsService = new google.maps.DirectionsService();
+	var directionsDisplay = new google.maps.DirectionsRenderer();
+	
+    var dhaka={lat: 23.8103, lng: 90.4125};
+    
+    var uluru = {lat: 23.751120, lng: 90.386908};
+    var uluru2 = {lat: 23.751280, lng: 90.378395};
+    
+    var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 15, center: uluru});
+    
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    var marker = new google.maps.Marker({position: uluru2, map: map});
+    directionsDisplay.setMap(map);
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF-Hexb9uIJ0FSurqMJkBmnya7G_dgUTk&callback=initMap">
+    </script>
+  </body>
+</html>

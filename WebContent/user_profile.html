@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSS/user_profile.css">
+     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+     <script type="text/javascript" src="jquery.slim.min.js"></script>
+     <script type="text/javascript" src="popper.min.js"></script>
+     <script type="text/javascript" src="bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="header">
+  <div class="header1">
+  <img class="logo" src="CSS/Image/jU14FTa.jpg" alt="Metro Rail" width="100" height="100">
+  </div>
+</div>
+</div>
+
+<div class="topnav">
+  <a href="user_home.html"><i class="fa fa-home"></i></a>
+  <a href="user_time_schedule.html">TRAIN SCHEDULE</a>
+    <a href="user_fare.html">FARE</a>
+  <a style="float:right" href="#logout" ><i class="fa fa-sign-out"></i></a>
+  <a style="float:right" href="#help" ><i class="fa fa-question"></i></a>
+  <a style="float:right" href="#settings" ><i class="fa fa-cog fa-fw"></i></a>
+  <a style="float:right" href="#profile" ><i class="fa fa-user-circle"></i></a>
+  
+</div>
+
+
+
+<div class="bodypart">
+<br>
+<div class="body">
+
+<a href="#" class="button"><b>edit profile</b></a>
+
+<div class="body1">
+
+<!-- code for import image from database  
+https://www.studentstutorial.com/java-project/view-image-in-jsp-servlet.php   -->
+
+
+</div>
+
+<div class="body2">
+<br>
+<!-- 
+<h1><%=resultSet.getString("first_name") %> <%=resultSet.getString("last_name") %></h1>
+-->
+<h1>Naiem Rahaman</h1>
+<br>
+<h4><i class="fa fa-envelope"></i>    <%=resultSet.getString("email") %></h4>
+
+<h4><i class="fa fa-phone"></i>    <%=resultSet.getString("mobile") %> </h4>
+</div>
+
+
+</div> 
+  
+
+</div>
+
+
+<div class="footer">
+<b>
+  <a href="#">Terms & Conditions</a> |
+  <a href="#">Privacy Policy</a> |
+  <a href="#">Contact Us</a>
+</b>  
+</div>
+
+
+</body>
+</html>
